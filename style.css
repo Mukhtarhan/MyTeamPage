@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&family=Poppins:wght@400;600&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'PT Serif', serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 1440px;
+
+}
+.head{
+    display: flex;
+    justify-content: space-evenly;
+}
+.head #p1{
+    font-family: 'PT Serif', serif;
+    width: 278px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    line-height: 48px;
+    letter-spacing: -0.045em;
+    color: #000000;
+}
+.head .head2 #p2{
+    font-family: 'Poppins', sans-serif;
+    width: 117px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    color: #000000;
+}
+.head .head2 #p3{
+    width: 439px;
+    font-family: 'Poppins', sans-serif;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+
+    color: #000000;
+}
+
+main .photo-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: normal;
+    padding: 72px 150px;
+    margin: auto;
+}
+main .photo-grid .image{
+    position: relative;
+    width: 339px;
+    margin-left: 100px;
+}
+main .photo-grid .image img {
+    width: 318px;
+}
+main .photo-grid .image:nth-child(3n + 2) {
+    margin-top: 100px;
+}
+main .photo-grid .image .name{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+main .photo-grid .image .job{
+    position: absolute;
+    right: 0;
+    font-family: 'PT Serif', serif;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+}
+footer {
+    margin-bottom: 48px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    text-align: center;
+    color: black;
+    margin-left: 200px;
+}
+@media  screen and (max-width: 1024px) {
+    .head{
+        max-width: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 150px;
+        width: 50px;
+        align-content: flex-start;
+    }
+
+    .head #p1 {
+        font-size: 29px;
+    }
+    .head .head2 {
+        margin-top: 35px;
+    }
+    .head .head2 #p2{
+        font-size: 15px;
+    }
+    .head .head2 #p3{
+        font-size: 14px;
+    }
+
+    main .photo-grid{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 38px;
+    }
+    main .photo-grid .image {
+        width: 108px;
+    }
+    main .photo-grid .image img{
+        width: 88px;
+    }
+    main .photo-grid .image:nth-child(3n + 2) {
+        margin-top: unset;
+    }
+    main .photo-grid .image:nth-child(odd){
+        row-gap: 34px;
+    }
+    main .photo-grid .image:nth-child(even){
+        margin-top: 34px;
+    }
+
+    main .photo-grid .image .name{
+        font-size: 1.1rem;
+    }
+    main .photo-grid .image .job{
+        font-size: 0.8rem;
+
+    }
+    footer{
+
+    }
+}
+
